@@ -1,7 +1,6 @@
 import React from "react";
 
 function Matome({ dataList, stateKey, stateTit, stateComponent, mappingEl }) {
-  // stateComponent가 없거나 mappingEl에 해당 컴포넌트가 없으면 기본값 처리
   if (!stateComponent || !mappingEl[stateComponent]) {
     return (
       <div className="matome-container">
@@ -12,7 +11,6 @@ function Matome({ dataList, stateKey, stateTit, stateComponent, mappingEl }) {
     );
   }
 
-  // 동적으로 컴포넌트 선택
   const SelectedComponent = mappingEl[stateComponent];
 
   return (

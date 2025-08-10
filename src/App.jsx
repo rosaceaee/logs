@@ -76,7 +76,7 @@ function App() {
       }
     };
     fetchData();
-  }, [state.stateKey]);
+  }, []);
 
   const ToggleNav = () => {
     // setSwitchNav((e) => e.style.toggleClass("on"));

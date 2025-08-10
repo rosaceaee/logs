@@ -30,7 +30,6 @@ nav {
 .arrow {
   z-index: 9999;
   position: absolute;
-  width: 100%;
   top: 0;
   left: auto;
   display: flex;
@@ -147,6 +146,161 @@ code {
 
     .grn {
       color: rgb(152, 195, 121);
+    }
+
+    .pur {
+      color: rgb(198, 120, 221);
+    }
+
+    &.elem-to-wrap {
+    }
+  }
+}
+
+.code-wrap {
+  border: 1px solid;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  text-align: left;
+  pre {
+    white-space: pre-wrap;
+  }
+
+  blockquote {
+    width: 100%;
+  }
+
+  .indent {
+    width: 100%;
+    display: block;
+
+    &.indent-once {
+      text-indent: calc(20 / 16 * 1rem);
+    }
+    &.indent-twice {
+      text-indent: calc(35 / 16 * 1rem);
+    }
+    &.indent-third {
+      text-indent: calc(40 / 16 * 1rem);
+    }
+    &.indent-fourth {
+      text-indent: calc(50 / 16 * 1rem);
+    }
+    &.indent-fifth {
+      text-indent: calc(60 / 16 * 1rem);
+    }
+  }
+
+  .indent-once {
+    display: block;
+    text-indent: calc(20 / 16 * 1rem);
+  }
+  .indent-twice {
+    display: block;
+    text-indent: calc(35 / 16 * 1rem);
+  }
+  .indent-third {
+    display: block;
+    text-indent: calc(40 / 16 * 1rem);
+  }
+  .indent-fourth {
+    display: block;
+    text-indent: calc(50 / 16 * 1rem);
+  }
+  .indent-fifth {
+    display: block;
+    text-indent: calc(60 / 16 * 1rem);
+  }
+
+  blockquote {
+    background-color: #333;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+}
+
+.head {
+  &.title-area {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 0;
+    overflow: visible;
+    white-space: pre-line;
+    .label-wrap {
+      display: flex;
+      justify-content: end;
+      gap: 0.3rem;
+      padding-right: 1rem;
+      span {
+        display: flex;
+        border: 1px solid;
+        width: 30px;
+        text-align: center;
+        padding: 4px 10px;
+        border-radius: 20px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+        &.fe {
+          background: rgb(224, 108, 117);
+          color: #fff;
+        }
+        &.be {
+          background: rgb(152, 195, 121);
+          color: #fff;
+        }
+      }
+    }
+
+    .num-date {
+      text-align: right;
+      padding-top: 1rem;
+      padding-right: 1rem;
+    }
+
+    .title {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      span {
+        font-size: 0.8rem;
+        display: block;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.article-wrap {
+  .body {
+    padding: 1rem;
+    text-align: left;
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      span {
+        display: block;
+        &.note {
+          margin-top: 0.5rem;
+          font-size: 0.65rem;
+        }
+      }
+
+      &.desc-title {
+        font-weight: 700;
+        margin: 1rem 0;
+      }
+    }
+
+    .article-block {
+      margin: 1rem 0;
+      &.maegaki {
+        margin-top: calc(40 / 16 * 1rem);
+      }
     }
   }
 }
