@@ -33,6 +33,7 @@ const reducer = (state, action) => {
         stateKey: action.payload.key,
         stateTit: action.payload.title,
         stateComponent: action.payload.component,
+        stateUrl: action.payload.url || null,
       };
     default:
       return state;
@@ -68,6 +69,7 @@ function App() {
               key: data.list[0].key,
               title: data.list[0].title,
               component: data.list[0].component,
+              url: data.list[0].url,
             },
           });
         }
@@ -98,18 +100,30 @@ function App() {
                 key={item.key}
                 type="button"
                 className="title"
-                onClick={() =>
-                  dispatch({
-                    type: "selected_el",
-                    payload: {
-                      key: item.key,
-                      title: item.title,
-                      component: item.component,
-                    },
-                  })
+                onClick={() => {
+                  if (item.url) {
+                    // URL이 있으면 새창으로 열기
+                    window.open(item.url, "_blank");
+                  } else {
+                    // URL이 없으면 컴포넌트 선택
+                    dispatch({
+                      type: "selected_el",
+                      payload: {
+                        key: item.key,
+                        title: item.title,
+                        component: item.component,
+                        url: item.url,
+                      },
+                    });
+                  }
+                }}
+                title={
+                  item.url
+                    ? `${item.title} 새창에서 열기`
+                    : item.description || item.title
                 }
               >
-                {item.key}
+                {item.key} {item.url && "🔗"}
               </button>
             ))}
           </nav>
@@ -142,6 +156,7 @@ function Contents() {
       stateKey={state.stateKey}
       stateTit={state.stateTit}
       stateComponent={state.stateComponent}
+      stateUrl={state.url}
       mappingEl={mappingEl}
     />
   );

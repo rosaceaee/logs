@@ -15,8 +15,7 @@
     {
       "key": "작업물",
       "title": "작업물",
-      "component": "Number",
-      "description": "숫자 관련 게임입니다."
+      "url": "https://rosaceaee.github.io/soil-port/"
     },
     {
       "key": "main-content",

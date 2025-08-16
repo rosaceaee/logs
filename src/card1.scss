@@ -1,5 +1,7 @@
+body {
+}
 nav {
-  width: 100%;
+  width: 40%;
   height: 100dvh;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -8,12 +10,13 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 0;
-  background-color: #fff;
+  left: -50%;
+  background-color: rgba(225, 225, 225, 0.8);
   z-index: 999;
 
   &.on {
     top: 0;
+    left: 0;
   }
 
   button[type="button"] {
