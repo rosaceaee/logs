@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import "../new.scss";
 
 export const Prj = () => {
   const [tabs, setTabs] = useState(0);
+  const [mo, setMo] = useState(false);
+
+  // const [swing, setSwing] = useState({
+  //   rotation: 0,
+  //   lastScrollY: 0,
+  //   // transform: `rotate(${scrollData.rotation}deg)`,
+  // });
 
   const worksData = [
     {
-      title: "title",
+      title: "Title1",
       desc: [
         ["one", "two", "three"],
         "simple matome description",
@@ -55,21 +62,63 @@ export const Prj = () => {
     return <span className={`chip ${type}`}>{labelMap[type] || ""}</span>;
   };
 
+  const SwingOnMobile = () => {
+    const [scrollData, setScrollData] = useState({
+      rotation: 0,
+      lastScrollY: 0,
+    });
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.innerWidth <= 500) {
+          const currentScrollY = window.scrollY;
+          const delta = currentScrollY - scrollData.lastScrollY;
+
+          if (delta !== 0) {
+            setScrollData((prev) => ({
+              rotation: prev.rotation + delta * 0.5,
+              lastScrollY: currentScrollY,
+            }));
+          }
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, [scrollData.lastScrollY]);
+
+    return (
+      <>
+        <nav
+          className="nav-wrap"
+          onClick={() => setMo((prev) => !prev)}
+          style={{ transform: `rotate(${scrollData.rotation}deg)` }}
+        ></nav>
+
+        {mo && (
+          <>
+            <div className="mo">
+              <ul className="mo-only nav-wrap" style={{ border: "2px solid green" }}>
+                <li>
+                  <p>sth1</p>
+                </li>
+                <li>
+                  <p>sth2</p>
+                </li>
+                <li>
+                  <p>test.test1@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </>
+        )}
+      </>
+    );
+  };
+
   return (
     <>
-      <nav className="nav-wrap">
-        <ul>
-          <li>
-            <p>sth1</p>
-          </li>
-          <li>
-            <p>sth2</p>
-          </li>
-          <li>
-            <p>test.test1@gmail.com</p>
-          </li>
-        </ul>
-      </nav>
+      <SwingOnMobile />
       <article>
         <section className="left">
           <span className="title-wrap">
@@ -100,7 +149,7 @@ export const Prj = () => {
 
               return (
                 <div key={index} className={`works ${isActive ? "on" : ""}`} onClick={() => setTabs(index)}>
-                  {isActive || isFirst ? (
+                  {isActive ? (
                     <span className="title-wrap">
                       <h2 className="title">{item.title}</h2>
                       {/* {item.date && <p className="date">{item.date}</p>} */}

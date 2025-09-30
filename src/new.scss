@@ -5,6 +5,7 @@ $fff: #ffffff;
 $black: #433e3f;
 $beige: #f8e5d2;
 $red: #e65952;
+$yb: #fdfff8;
 $blue: #1591e4;
 //
 
@@ -31,6 +32,9 @@ $blue: #1591e4;
   height: 56px;
   background: $black;
   color: $fff;
+
+  container-type: inline-size;
+  container-name: navv;
   ul {
     display: flex;
     margin-left: auto;
@@ -227,7 +231,7 @@ article {
             letter-spacing: 0.1rem;
             padding: 10px 0 1rem 1rem;
             letter-spacing: 0.1rem;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
           }
 
           .cont {
@@ -265,6 +269,29 @@ article {
   container-name: card;
 }
 
+@container navv (max-width: 1024px) {
+  .nav-wrap {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: auto;
+    display: block;
+    position: fixed;
+    right: 7px;
+    top: 0;
+
+    &.rotate {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease;
+    }
+    ul {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+}
 @container card (max-width: 500px) {
   article {
     section {
@@ -313,5 +340,28 @@ article {
     display: flex;
     flex-direction: column;
     height: fit-content;
+  }
+
+  .nav-wrap {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: auto;
+    display: block;
+    position: fixed;
+    right: 7px;
+    top: 0;
+
+    &.rotate {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .mo .mo-only {
+    width: 100%;
+    border: 2px solid red;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
   }
 }
