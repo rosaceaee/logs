@@ -327,7 +327,7 @@ article {
             .folded-tit {
               text-align: left;
               transform: none;
-              padding: 0;
+              padding: 0 1rem;
             }
           }
         }
@@ -335,6 +335,8 @@ article {
     }
   }
 }
+
+// https://www.fffuel.co/dddoodle/
 @media (max-width: 500px) {
   article {
     display: flex;
@@ -343,13 +345,15 @@ article {
   }
 
   .nav-wrap {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 7rem;
+    height: 7rem;
     margin-left: auto;
     display: block;
     position: fixed;
     right: 7px;
     top: 0;
+    z-index: 999;
+    background: none;
 
     &.rotate {
       transform: rotate(360deg);
@@ -358,10 +362,17 @@ article {
   }
 
   .mo .mo-only {
-    width: 100%;
-    border: 2px solid red;
     position: fixed;
-    bottom: 0;
-    background: #fff;
+    background: $black;
+    color: $fff;
+    top: 0;
+    width: calc(100% - 1rem);
+    margin: 0 auto;
+    left: 7px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+    list-style: none;
   }
 }
