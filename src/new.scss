@@ -3,6 +3,7 @@
 // color chips
 $fff: #ffffff;
 $black: #433e3f;
+$gray: #635a5a;
 $beige: #f8e5d2;
 $red: #e65952;
 $yb: #fdfff8;
@@ -30,8 +31,9 @@ $blue: #1591e4;
 .nav-wrap {
   width: 100%;
   height: 56px;
-  background: $black;
+  background: $gray;
   color: $fff;
+  opacity: 0.5;
 
   container-type: inline-size;
   container-name: navv;
@@ -94,6 +96,7 @@ article {
   padding-top: 56px;
   gap: 6px;
   height: calc(100vh - 56px);
+  overflow: hidden;
 
   section {
     color: #e65952;
@@ -103,9 +106,14 @@ article {
       margin-bottom: 1rem;
       margin-left: 1rem;
       max-width: calc(100% - 1rem);
-      border: 1px solid;
+      border: 1px solid $black;
       display: flex;
       flex-direction: column;
+      position: relative;
+      overflow-y: hidden;
+      border-top-right-radius: 13px;
+      border-bottom-left-radius: 13px;
+
       .title-wrap {
         margin: 2rem;
       }
@@ -113,6 +121,18 @@ article {
         line-height: 1.7;
         letter-spacing: 0.08rem;
         color: #433e3f;
+      }
+      .para {
+        background: #fff;
+        padding: 10px;
+        margin: 10px 0;
+        width: auto;
+      }
+
+      svg {
+        position: absolute;
+        bottom: -25rem;
+        opacity: 0.5;
       }
     }
 
@@ -177,6 +197,7 @@ article {
             cursor: default;
             background: none;
             color: $black;
+            background: $fff;
             .cont,
             .title-wrap {
               display: block;
@@ -217,7 +238,6 @@ article {
               }
             }
 
-            // 나머지 탭일 때 folded-tit 보여줌
             &:not(:first-child) {
               .folded-tit {
                 display: block;
@@ -245,7 +265,6 @@ article {
             gap: 1rem;
             line-height: 1.5;
             padding-bottom: 1rem;
-
             letter-spacing: 0.1rem;
             font-family: "GoyangIlsan";
             font-weight: 600;
@@ -283,12 +302,17 @@ article {
       transform: rotate(360deg);
       transition: transform 0.5s ease;
     }
+
+    .box {
+      z-index: 9999;
+    }
     ul {
-      width: 10px;
-      height: 10px;
+      width: 100%;
+      height: 7rem;
       margin-right: 10px;
       margin-left: 0;
       max-width: 100%;
+      left: 0;
     }
   }
 }
@@ -297,13 +321,24 @@ article {
     section {
       &.left {
         margin-left: 0;
-        max-width: calc(100% - 1rem);
+        max-width: calc(100% - 2.4rem);
         margin: 0 auto;
+        border-radius: 0;
+        .title-wrap {
+          h1 {
+            font-size: 1.6rem;
+          }
+        }
       }
       &.right {
         margin-left: 0;
-        max-width: calc(100% - 1rem);
+        max-width: calc(100% - 2.4rem);
         margin: 0 auto;
+        gap: 0;
+
+        .right-header {
+          border: none;
+        }
 
         .works-wrap {
           flex-direction: column;
@@ -312,7 +347,7 @@ article {
             max-height: 300px;
             &.on {
               max-height: 300px;
-              padding: 1rem;
+              padding: 2rem 1.2rem;
               width: 100%;
               overflow-x: auto;
               max-width: fit-content;
@@ -322,12 +357,27 @@ article {
                   height: 100%;
                 }
               }
+
+              .title-mark {
+                width: 30px;
+                height: 30px;
+                background: #333;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.9;
+                position: sticky;
+                right: 1rem;
+                top: 0;
+              }
             }
 
             .folded-tit {
               text-align: left;
               transform: none;
               padding: 0 1rem;
+              font-size: 1.03rem;
             }
           }
         }
@@ -336,8 +386,28 @@ article {
   }
 }
 
+.box {
+  width: 100%;
+  height: 50px;
+  display: none;
+
+  .pc-only {
+    display: flex;
+  }
+}
+
 // https://www.fffuel.co/dddoodle/
 @media (max-width: 500px) {
+  .box {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    background: $red;
+    position: fixed;
+    right: 123px;
+    top: -17px;
+    border-radius: 16px;
+  }
   article {
     display: flex;
     flex-direction: column;
@@ -359,9 +429,13 @@ article {
       transform: rotate(360deg);
       transition: transform 0.5s ease;
     }
+
+    .pc-only {
+      display: none;
+    }
   }
 
-  .mo .mo-only {
+  .mo-only {
     position: fixed;
     background: $black;
     color: $fff;
@@ -375,4 +449,45 @@ article {
     justify-content: center;
     list-style: none;
   }
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+}
+
+.line {
+  position: absolute;
+  background-color: gold;
+  transition: all 0.2s ease-out;
+}
+
+.topp {
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+}
+
+.rightt {
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0;
+}
+
+.bottomm {
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+}
+
+.leftt {
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
 }
