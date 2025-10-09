@@ -1,4 +1,4 @@
-@import "reset.scss";
+// @import "reset.scss";
 
 // color chips
 $fff: #ffffff;
@@ -13,7 +13,8 @@ $blue: #1591e4;
 // font
 @font-face {
   font-family: "GoyangIlsan";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff")
+    format("woff");
   font-weight: normal;
   font-display: swap;
 }
@@ -24,6 +25,23 @@ $blue: #1591e4;
     format("woff2");
   font-weight: 400;
   font-display: swap;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}
+
+nav {
+  position: relative !important;
+  left: 0 !important;
 }
 
 //
@@ -71,12 +89,12 @@ $blue: #1591e4;
   &:nth-child(1) {
     margin: 0 0.3rem 0 0;
   }
-  &.one {
+  &.scss {
     background: $blue;
     color: #fff;
   }
 
-  &.two {
+  &.js {
     background: $black;
     color: #fff;
   }
@@ -247,11 +265,17 @@ article {
 
           .folded-tit {
             transform: rotate(90deg);
+            transform-origin: left top;
             font-weight: 600;
             letter-spacing: 0.1rem;
-            padding: 10px 0 1rem 1rem;
-            letter-spacing: 0.1rem;
+            padding: 0 0 0rem 1rem;
             font-size: 1.2rem;
+            position: relative;
+            left: 2.5rem;
+            top: 0;
+            height: fit-content;
+            width: max-content;
+            white-space: nowrap;
           }
 
           .cont {
