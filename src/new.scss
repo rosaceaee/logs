@@ -6,6 +6,7 @@ $black: #433e3f;
 $gray: #635a5a;
 $beige: #f8e5d2;
 $red: #e65952;
+$yel: rgb(217, 217, 28);
 $yb: #fdfff8;
 $blue: #1591e4;
 //
@@ -13,7 +14,8 @@ $blue: #1591e4;
 // font
 @font-face {
   font-family: "GoyangIlsan";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff")
+    format("woff");
   font-weight: normal;
   font-display: swap;
 }
@@ -84,14 +86,14 @@ nav {
   display: flex;
   justify-content: end;
   align-items: end;
-  border: 1px solid;
+
   gap: 10px;
   padding: 10px 0;
 }
 .chip {
   margin: 0 0.3rem;
   padding: 4px 10px;
-  border-radius: 1rem;
+  border-radius: calc(13 / 16 * 1rem);
   line-height: 1.6;
   &:nth-child(1) {
     margin: 0 0.3rem 0 0;
@@ -102,11 +104,11 @@ nav {
   }
 
   &.js {
-    background: $black;
-    color: #fff;
+    background: $yel;
+    color: #333;
   }
 
-  &.three {
+  &.react {
     background: $red;
     color: $fff;
   }
@@ -231,7 +233,20 @@ article {
             .cont {
               .summary {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                margin: 1rem 0;
+                align-items: flex-start;
+                padding: 0 1rem 1rem;
+                border: 1px solid $gray;
+
+                .chip-wrap {
+                  display: flex;
+                  justify-content: end;
+                  align-items: end;
+                  gap: 10px;
+                  padding: 10px 0;
+                  margin: 1rem 0;
+                }
               }
 
               .desc {
@@ -295,13 +310,15 @@ article {
             justify-content: flex-start;
             gap: 1rem;
             line-height: 1.5;
-            padding-bottom: 1rem;
             letter-spacing: 0.1rem;
             font-family: "GoyangIlsan";
             font-weight: 600;
             .title,
             .date {
               letter-spacing: 0.1rem;
+            }
+            .title {
+              font-size: 2.5rem;
             }
             .date {
               display: flex;

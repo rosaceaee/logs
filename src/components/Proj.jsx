@@ -17,121 +17,102 @@ export const Prj = () => {
       desc: {
         tachi1: {
           skills: ["js", "scss"],
-          tit: "test1",
+          tit: "[웹 / 모바일] LG전자 사이트 운영",
           description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
+            "고객지원 서비스 사이트 전반적인 유지보수 및 UXUI 개선 작업 참여",
+            "웹/모바일 사이트 최적화 및 성능 개선: 전체 페이지(상담 서비스, 출장 서비스 예약 등)의 웹, 모바일 UX/UI 전면 개편 및 웹 접근성 표준 준수",
+            "레거시 코드 개선 및 이벤트 페이지 개발용으로 신규 함수 기능 생성하여 타 개발자 작업 효율성 증대",
+            "타 신규 작업자의 원활한 온보딩을 위하여 프로젝트 내부 가이드 문서 작성",
           ],
         },
         tachi2: {
           skills: ["js", "scss", "react"],
-          tit: "[ウェブ・アプリケーション] UXUIのメンテナンス choi",
+          tit: "[웹 / 모바일] UXUIのメンテナンス choi",
           description: [
             "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
-          ],
-        },
-        tachi3: {
-          skills: ["js", "scss", "react"],
-          tit: "[ウェブ・アプリケーション] UXUIのメンテナンス exam",
-          description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
+            "영어 교육용 웹·앱 서비스의 UI/UX 유지보수 및 QA 테스트 대응을 통해 학습 경험의 일관성과 품질 개선에 기여",
+            "프로젝트 전반에 사용된 CSS 레거시 코드 정리 및 구조 리팩토링을 수행하여, 코드 가독성과 유지보수성을 향상시킴",
+            "다양한 디바이스 및 해상도 기반의 UI 테스트를 통해 화면 최적화를 진행하고, 학습 대상 사용자에게 안정적인 UX를 제공함",
           ],
         },
         tachi4: {
           skills: ["js", "scss", "react"],
           tit: "[ウェブ・アプリケーション] UXUIのメンテナンス phonic",
           description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
+            "uxui 담당 ",
+            "레거시 css를 모두 리팩토링 - 다양한 디바이스 스크린에 대응 및 프로그램 소스 메모리 효율 활성화",
+            "웹/앱 전체 uxui 담당",
           ],
         },
         tachi5: {
+          skills: ["js", "scss"],
+          tit: "[웹] 서울여자대학교 아동학과",
+          description: ["", "유지보수 요청으로 페이지 스타일시트 수정"],
+        },
+        tachi6: {
           skills: ["js", "scss", "react"],
           tit: "[ウェブ] ジョップコリアサイト",
+          description: [],
+        },
+      },
+    },
+    {
+      title: "구축 立ち上げ",
+      desc: {
+        tachi1: {
+          tit: "미래에셋 헬스케어 앱 구축",
+          skills: ["js", "scss"],
           description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
+            "헬스 앱 uxui 리뉴얼 구축 프로젝트의 uxui 퍼블리싱 담당",
+            "이벤트 페이지 생성",
+            "유닛 테스트, 통합 테스트의 ui 관련 부분 디버깅 담당하여 앱 뷰 완성도 높임",
+            "무슨 어워드 디자인 상 장려상인가 수상했음",
+          ],
+        },
+        tachi2: {
+          tit: "현대자동차 웹,모바일웹 사이트 구축",
+          skills: ["js", "scss"],
+          description: [
+            "현대자동차 웹,모바일 사이트 uxui 구축",
+            "공통 컴포넌트 요소 생성하여 구축 및 유지보수 작업 효율 상승",
+            "디자인 일관성과 재사용성 강화를 위한 UI 컴포넌트 구조 개선 및 문서화 참여 ",
+            "영문 퍼블리싱 중 발견된 원고 품질 이슈에 대해 기획 및 PM 부서와 협업하여 수정 반영함으로써, 최종 콘텐츠의 정확성과 전달력 향상에 기여 動画のようなメディア要素に関するアニメーションイベント関数作成に携わりました。",
+          ],
+        },
+        tachi3: {
+          tit: "[웹 / 모바일] LG전자 global project 사이트 구축",
+          skills: ["pug", "scss"],
+          description: [
+            "동유럽, 대만, 베트남 사이트의 결제, 회원 관련 페이지 구축",
+            "타국가 사이트와 싱크 맞추어 안정화 작업",
+            "",
+          ],
+        },
+        tachi4: {
+          skills: ["js", "scss", "react"],
+          tit: "[웹 / 모바일] uxui 영어시험 구축 및 유지보수",
+          description: [
+            "(사내 보안이슈로 url 게시가 어렵습니다.)",
+            "학원 배포용으로 사용할 영어시험 uxui 페이지 구축",
+            "다양한 유형의 시험(4지선다, 동일단어 줄긋기 등) 구현",
+          ],
+        },
+        tachi5: {
+          skills: ["js", "scss"],
+          tit: "[ウェブ] ssmedipia",
+          description: [
+            "사내 자체 CMS툴로 사이트 제작",
+            "",
             "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
             "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
           ],
         },
         tachi6: {
           skills: ["js", "scss"],
-          tit: "[ウェブ] ソウル大学校の児童学科サイト",
+          tit: "[ウェブ] 공간산업",
           description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
-          ],
-        },
-      },
-    },
-    {
-      title: "立ち上げ",
-      desc: {
-        tachi1: {
-          tit: "test1",
-          skills: ["js", "scss"],
-          description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
-            "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
-            "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
+            "사내 자체 CMS툴로 사이트 제작",
             "",
-            "",
-          ],
-        },
-        tachi2: {
-          tit: "アプリケーションUIUXの立ち上げに取り組み",
-          skills: ["js", "scss"],
-          description: [
-            "アプリケーションUIUXの立ち上げに取り組み",
-            "イベントページの関数機能の仕上げ",
-            "UIUXに関するQAの前半的な対応",
-            "アプリケーションのUXUI画面テストに参与",
-            "",
-            "",
-          ],
-        },
-        tachi3: {
-          tit: "UXUI立ち上げ",
-          skills: ["js", "scss"],
-          description: [
-            "PUGのプロジェクトで、大規模の多言語サイトに取り組みました。オーストラリア、ハンガリー、チェコ、台湾、ベトナムなど",
-            "決済・会員ページの立ち上げ及び修正",
-            "",
-            "",
-          ],
-        },
-        tachi4: {
-          tit: "ある自動車会社のレーシングなどに関するサイトのリニューアル立ち上げ",
-          skills: ["js", "scss"],
-          description: [
-            "カスタムコンポーネント要素から作成して、",
-            "英語サイトの翻訳言語反映の担当",
-            "動画のようなメディア要素に関するアニメーションイベント関数作成に携わりました。",
-            "",
-            "",
-            "",
-          ],
-        },
-        tachi5: {
-          skills: ["js", "scss"],
-          tit: "[ウェブ] 血液の会社",
-          description: [
-            "運用と機能の立ち上げ",
-            "カスタマーサービスサイトの前半的なユーザーインターフェース開発に取り組みました。",
             "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
             "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
           ],
@@ -142,7 +123,7 @@ export const Prj = () => {
       title: "サイド",
       desc: {
         tachi0: {
-          tit: "MDN docs英韓翻訳",
+          tit: "MDN 영한번역",
           skills: [],
           description: ["outerHeight", "index", "index", "index", "", ""],
         },
@@ -166,12 +147,12 @@ export const Prj = () => {
       },
     },
   ];
-
   const Chip = ({ type }) => {
     const labelMap = {
-      scss: "scss",
+      scss: "css",
       js: "js",
-      three: "react",
+      react: "react",
+      pug: "pug",
     };
 
     return <span className={`chip ${type}`}>{labelMap[type] || ""}</span>;
@@ -325,42 +306,99 @@ export const Prj = () => {
       <article>
         <section className="left">
           <span className="title-wrap">
-            <h1>どうも</h1>
-            <h3>d </h3>
-            <p className="para">asdf</p>
-            <p className="para">test</p>
+            <h1>UI</h1>
+            <h3></h3>
+            <p className="para">
+              시각적인 UI화면 구현과 코드 내부 구조에 관심이 많습니다.
+              <br />
+              기존에 만들어진 프로덕트를 사용하는 것도 좋아하지만 스스로 직접
+              만드는 것을 선호합니다.
+              {/* 유사한 메서드의 차이를 비교한다거나. */}
+            </p>
+            <p className="para">
+              기술문서의 글을 한국어로 옮기는 것을 좋아합니다.
+            </p>
             <p className="para">(d)</p>
           </span>
 
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 800 800"
+          >
             <defs>
-              <radialGradient id="sssurface-grad-dark" r="75%" cx="18%" cy="20%">
-                <stop offset="0%" stop-color="hsl(50, 98%, 50%)" stop-opacity="0"></stop>
-                <stop offset="100%" stop-color="#c4a200" stop-opacity="0.64"></stop>
+              <radialGradient
+                id="sssurface-grad-dark"
+                r="75%"
+                cx="18%"
+                cy="20%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="hsl(50, 98%, 50%)"
+                  stop-opacity="0"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="#c4a200"
+                  stop-opacity="0.64"
+                ></stop>
               </radialGradient>
-              <radialGradient id="sssurface-grad-light" r="15%" cx="23%" cy="20%">
-                <stop offset="0%" stop-color="#ffff52" stop-opacity="0.19"></stop>
-                <stop offset="100%" stop-color="hsl(50, 98%, 50%)" stop-opacity="0"></stop>
+              <radialGradient
+                id="sssurface-grad-light"
+                r="15%"
+                cx="23%"
+                cy="20%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="#ffff52"
+                  stop-opacity="0.19"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="hsl(50, 98%, 50%)"
+                  stop-opacity="0"
+                ></stop>
               </radialGradient>
             </defs>
             <g>
-              <circle r="350" cx="400" cy="400" fill="hsl(50, 98%, 50%)"></circle>
-              <circle r="350" cx="400" cy="400" fill="url(#sssurface-grad-dark)"></circle>
-              <circle r="350" cx="400" cy="400" fill="url(#sssurface-grad-light)"></circle>
+              <circle
+                r="350"
+                cx="400"
+                cy="400"
+                fill="hsl(50, 98%, 50%)"
+              ></circle>
+              <circle
+                r="350"
+                cx="400"
+                cy="400"
+                fill="url(#sssurface-grad-dark)"
+              ></circle>
+              <circle
+                r="350"
+                cx="400"
+                cy="400"
+                fill="url(#sssurface-grad-light)"
+              ></circle>
             </g>
           </svg>
         </section>
 
         <section className="right">
           <div className="right-header">
-            <h2 className="idk">Test description</h2>
+            <h2 className="idk">Works</h2>
           </div>
           <div className="works-wrap">
             {Dataa.map((item, index) => {
               const isActive = tabs === index;
 
               return (
-                <div key={index} className={`works ${isActive ? "on" : ""}`} onClick={() => setTabs(index)}>
+                <div
+                  key={index}
+                  className={`works ${isActive ? "on" : ""}`}
+                  onClick={() => setTabs(index)}
+                >
                   {isActive ? (
                     <span className="title-wrap">
                       <h2 className="title">{item.title}</h2>
@@ -381,7 +419,9 @@ export const Prj = () => {
                       {Object.entries(item.desc).map(([key, value]) => (
                         <div key={key} className="summary">
                           <div className="chip-wrap">
-                            {value.tit && <h4 className="title">{value.tit}</h4>}
+                            {value.tit && (
+                              <h4 className="title">{value.tit}</h4>
+                            )}
                             {value.skills.map((type, index) => (
                               <Chip key={index} type={type} />
                             ))}
