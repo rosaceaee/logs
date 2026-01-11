@@ -12,11 +12,12 @@ import MainEl from "./components/MainEl";
 import Test from "./components/Test";
 import ArticleFrame from "./article/ArticleFrame";
 import Article0402 from "./article/2025/Article0402";
+import Prj from "./components/Proj";
 
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
-import "./card1.scss";
+
+// import "./card1.scss";
 
 const initial = {
   stateKey: null,
@@ -46,6 +47,7 @@ const mappingEl = {
   Number: Number,
   MainEl: MainEl,
   ArticleFrame: ArticleFrame,
+  Prj: Prj,
 };
 
 function App() {
@@ -90,9 +92,9 @@ function App() {
 
     return (
       <>
-        <div className={switchNav ? "arrow on" : "arrow"} onClick={Back}>
+        {/* <div className={switchNav ? "arrow on" : "arrow"} onClick={Back}>
           <h3>&gt;</h3>
-        </div>
+        </div> */}
         {switchNav && (
           <nav className={switchNav ? "on" : ""}>
             {dataList.map((item) => (

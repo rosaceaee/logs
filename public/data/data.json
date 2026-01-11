@@ -1,6 +1,12 @@
 {
   "list": [
     {
+      "key": "Prj",
+      "title": "메인 콘텐츠",
+      "component": "Prj",
+      "description": "메인 페이지 콘텐츠입니다."
+    },
+    {
       "key": "작업일지",
       "title": "빈 콘텐츠",
       "component": "ArticleFrame",
@@ -16,12 +22,6 @@
       "key": "작업물",
       "title": "작업물",
       "url": "https://rosaceaee.github.io/soil-port/"
-    },
-    {
-      "key": "main-content",
-      "title": "메인 콘텐츠",
-      "component": "MainEl",
-      "description": "메인 페이지 콘텐츠입니다."
     }
   ]
 }
