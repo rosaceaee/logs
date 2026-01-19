@@ -21,7 +21,7 @@ export const Prj = () => {
           description: [
             "고객지원 서비스 사이트 전반적인 유지보수 및 UXUI 개선 작업 참여",
             "웹/모바일 사이트 최적화 및 성능 개선: 전체 페이지(상담 서비스, 출장 서비스 예약 등)의 웹, 모바일 UX/UI 전면 개편 및 웹 접근성 표준 준수",
-            "레거시 코드 개선 및 이벤트 페이지 개발용으로 신규 함수 기능 생성하여 타 개발자 작업 효율성 증대",
+            "js 레거시 코드 개선과 이벤트 페이지의 js 코드 개선하여 작업자의 작업 효율성 증대",
             "타 신규 작업자의 원활한 온보딩을 위하여 프로젝트 내부 가이드 문서 작성",
           ],
         },
@@ -30,9 +30,9 @@ export const Prj = () => {
           tit: "[웹 / 모바일] UXUIのメンテナンス choi",
           description: [
             "運用と機能の立ち上げ",
-            "영어 교육용 웹·앱 서비스의 UI/UX 유지보수 및 QA 테스트 대응을 통해 학습 경험의 일관성과 품질 개선에 기여",
+            "영어 교육 웹·앱 서비스의 UI/UX 유지보수 및 QA 테스트 대응을 통해 학습 경험의 일관성과 품질 개선에 기여",
             "프로젝트 전반에 사용된 CSS 레거시 코드 정리 및 구조 리팩토링을 수행하여, 코드 가독성과 유지보수성을 향상시킴",
-            "다양한 디바이스 및 해상도 기반의 UI 테스트를 통해 화면 최적화를 진행하고, 학습 대상 사용자에게 안정적인 UX를 제공함",
+            "교육에 사용하는 다양한 디바이스에 대응하기 위해 UI 화면 최적화를 진행하여 학습 대상 사용자에게 안정적인 UX를 제공함",
           ],
         },
         tachi4: {
@@ -57,30 +57,28 @@ export const Prj = () => {
       },
     },
     {
-      title: "구축 立ち上げ",
+      title: "구축 프로젝트",
       desc: {
         tachi1: {
-          tit: "미래에셋 헬스케어 앱 구축",
+          tit: "미래에셋 헬스케어 앱",
           skills: ["js", "scss"],
           description: [
             "헬스 앱 uxui 리뉴얼 구축 프로젝트의 uxui 퍼블리싱 담당",
-            "이벤트 페이지 생성",
             "유닛 테스트, 통합 테스트의 ui 관련 부분 디버깅 담당하여 앱 뷰 완성도 높임",
-            "무슨 어워드 디자인 상 장려상인가 수상했음",
+            "2025 어워드 디자인 장려상 수상",
           ],
         },
         tachi2: {
-          tit: "현대자동차 웹,모바일웹 사이트 구축",
+          tit: "현대자동차 웹,모바일웹 사이트 ",
           skills: ["js", "scss"],
           description: [
-            "현대자동차 웹,모바일 사이트 uxui 구축",
             "공통 컴포넌트 요소 생성하여 구축 및 유지보수 작업 효율 상승",
             "디자인 일관성과 재사용성 강화를 위한 UI 컴포넌트 구조 개선 및 문서화 참여 ",
             "영문 퍼블리싱 중 발견된 원고 품질 이슈에 대해 기획 및 PM 부서와 협업하여 수정 반영함으로써, 최종 콘텐츠의 정확성과 전달력 향상에 기여 動画のようなメディア要素に関するアニメーションイベント関数作成に携わりました。",
           ],
         },
         tachi3: {
-          tit: "[웹 / 모바일] LG전자 global project 사이트 구축",
+          tit: "[웹 / 모바일] LG전자 global project 사이트 ",
           skills: ["pug", "scss"],
           description: [
             "동유럽, 대만, 베트남 사이트의 결제, 회원 관련 페이지 구축",
@@ -101,8 +99,6 @@ export const Prj = () => {
           skills: ["js", "scss"],
           tit: "[ウェブ] ssmedipia",
           description: [
-            "사내 자체 CMS툴로 사이트 제작",
-            "",
             "大手の開発システムとプロセスを身に着けられて、個人プロジェクトにコミットするとき残るメッセージに快適化ができるようになりました。なお、主に使うスキルではないレガシー環境で柔軟にコード作成ができるようになりました。",
             "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
           ],
@@ -120,28 +116,39 @@ export const Prj = () => {
       },
     },
     {
-      title: "サイド",
+      title: "ライティング活動",
       desc: {
-        tachi0: {
-          tit: "MDN 영한번역",
+        tachi20: {
+          tit: "MDN 영한번역 기여",
           skills: [],
-          description: ["outerHeight", "index", "index", "index", "", ""],
-        },
-        tachi1: {
-          tit: "為替レートのチェック",
-          skills: ["js", "scss"],
+          description0: [
+            "outerHeight",
+            "deviceApi",
+            "clipboard",
+            "tabindex",
+            "Ratelimit",
+            "Static site generator",
+          ],
           description: [
-            "個人的に必要なツールが作りたいと思って、簡単な為替レートのツールを作りました。",
-            "ある為替レートのとこから呼び出してます。",
-            "",
-            "",
-            "",
-            "",
+            {
+              label: "outerHeight",
+              url: "https://developer.mozilla.org/ko/docs/Web/API/Window/outerHeight",
+            },
+            { label: "deviceApi", url: "https://www.box1.com" },
+            { label: "clipboard", url: "https://www.box1.com" },
+            { label: "tabindex", url: "https://www.box1.com" },
+          ],
+        },
+        tachi00: {
+          tit: "Regex learn 사이트 한국어 교정 기여",
+          skills: [],
+          description: [
+            "Regex 표현식을 공부하던 도중 발견한 사이트에서 자연스럽지 않은 한국어 번역에 성질이 나서 한국어 사용자의 원활한 학습에 기여함",
           ],
         },
         tachi2: {
-          tit: "test1",
-          skills: ["js", "scss"],
+          tit: "대시보드 샘플",
+          skills: ["ts", "react", "scss"],
           description: ["", ".", "", "", "", ""],
         },
       },
@@ -256,10 +263,10 @@ export const Prj = () => {
 
           <ul className="pc-only">
             <li>
-              <p>dd</p>
+              <p>velog</p>
             </li>
             <li>
-              <p>asdfawerg</p>
+              <p>github</p>
             </li>
           </ul>
 
@@ -306,17 +313,26 @@ export const Prj = () => {
       <article>
         <section className="left">
           <span className="title-wrap">
-            <h1>UI</h1>
+            <h1>どうもー</h1>
             <h3></h3>
             <p className="para">
-              시각적인 UI화면 구현과 코드 내부 구조에 관심이 많습니다.
+              화면을 그리며 구현하는 것을 넘어, 프로덕트의 본질적인 내부를
+              분석하고 파악하여 품질을 높이는 데에 집중하고 있습니다.
               <br />
-              기존에 만들어진 프로덕트를 사용하는 것도 좋아하지만 스스로 직접
-              만드는 것을 선호합니다.
-              {/* 유사한 메서드의 차이를 비교한다거나. */}
+              프론트엔드 개발 전반에 관심이 많고 호기심도 많아 CS공부도 하며
+              더욱 원활한 커뮤니케이션이 가능합니다.
             </p>
             <p className="para">
-              기술문서의 글을 한국어로 옮기는 것을 좋아합니다.
+              퍼블리싱 개발자로서 구축, 운영의 다양한 프로젝트에 참여하며 쌓은
+              경험을 바탕으로, 사용자 친화적인 UI 구현과 효율적인 코드 구조
+              설계에 능숙합니다.
+            </p>
+            <p className="para">
+              또한 테크니컬 라이팅에 관심이 많아 MDN 웹 문서의 글을 번역하는
+              활동도 하고있습니다.
+              <a href="" target="_blank" rel="noopener noreferrer">
+                번역을 포함한 글 모음 보기
+              </a>
             </p>
             <p className="para">(d)</p>
           </span>
@@ -422,14 +438,42 @@ export const Prj = () => {
                             {value.tit && (
                               <h4 className="title">{value.tit}</h4>
                             )}
-                            {value.skills.map((type, index) => (
-                              <Chip key={index} type={type} />
-                            ))}
+
+                            {
+                              // last one only
+                              tabs === 2 ? (
+                                <>
+                                  {value.skills.map((type, index) => (
+                                    <Chip key={index} type={type} />
+                                  ))}
+                                </>
+                              ) : null
+                            }
                           </div>
 
-                          {value.description.map((descItem, index) => (
-                            <p key={index}>{descItem}</p>
-                          ))}
+                          {
+                            // last one only
+                            tabs === 2 ? (
+                              <>
+                                {value.description.map((descItem, index) => (
+                                  <a
+                                    key={index}
+                                    href={descItem.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {descItem.label}
+                                  </a>
+                                ))}
+                              </>
+                            ) : (
+                              <>
+                                {value.description.map((descItem, index) => (
+                                  <p key={index}>{descItem}</p>
+                                ))}
+                              </>
+                            )
+                          }
                         </div>
                       ))}
 

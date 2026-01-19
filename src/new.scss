@@ -120,7 +120,8 @@ article {
   display: grid;
   grid-template-columns: 40% 60%;
   height: 100%;
-  padding-top: 56px;
+  // padding-top: 56px;
+  padding-top: 28px;
   gap: 6px;
   height: calc(100vh - 56px);
   overflow: hidden;
@@ -171,6 +172,9 @@ article {
       display: flex;
       flex-direction: column;
       gap: 6px;
+
+      container-type: inline-size;
+      container-name: worksBox;
 
       .right-header {
         border: 1px solid $black;
@@ -225,6 +229,7 @@ article {
             background: none;
             color: $black;
             background: $fff;
+
             .cont,
             .title-wrap {
               display: block;
@@ -326,6 +331,8 @@ article {
             }
           }
         }
+        @container navv (max-width: 1024px) {
+        }
       }
     }
   }
@@ -364,7 +371,34 @@ article {
     }
   }
 }
-@container card (max-width: 500px) {
+
+@container worksBox (max-width: 1366px) {
+  article {
+    section {
+      &.right {
+        .works-wrap {
+          display: block;
+          width: 100%;
+
+          .works {
+            &.on {
+              // max-height: 480px;
+              min-height: 300px;
+              // max-height: 450px;
+              padding: 1rem 0.2rem;
+            }
+
+            .folded-tit {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@container card (max-width: 820px) {
   article {
     section {
       &.left {
@@ -392,9 +426,9 @@ article {
           flex-direction: column;
 
           .works {
-            max-height: 300px;
+            max-height: 1000px;
             &.on {
-              max-height: 300px;
+              max-height: 450px;
               padding: 2rem 1.2rem;
               width: 100%;
               overflow-x: auto;
