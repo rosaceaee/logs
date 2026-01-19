@@ -236,6 +236,10 @@ article {
             }
 
             .cont {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
               .summary {
                 display: flex;
                 flex-direction: column;
@@ -243,7 +247,7 @@ article {
                 align-items: flex-start;
                 padding: 0 1rem 1rem;
                 border: 1px solid $gray;
-
+                width: calc(100% - 6rem);
                 .chip-wrap {
                   display: flex;
                   justify-content: end;
@@ -251,6 +255,37 @@ article {
                   gap: 10px;
                   padding: 10px 0;
                   margin: 1rem 0;
+                }
+
+                .btn-wrap {
+                  width: calc(100% - 3rem);
+                  display: flex;
+                  gap: 10px;
+                  .btn-link {
+                    padding: 7px 1rem;
+                    background: $black;
+                    color: $fff;
+                    border-radius: 4px;
+                  }
+                }
+
+                .works-desc {
+                  padding-left: 14px;
+                  .txt {
+                    position: relative;
+                    font-size: 1rem;
+                    line-height: 2;
+                    &:before {
+                      content: "";
+                      width: 4px;
+                      height: 4px;
+                      border-radius: 50%;
+                      background: $blue;
+                      position: absolute;
+                      left: -10px;
+                      top: 14px;
+                    }
+                  }
                 }
               }
 
@@ -385,7 +420,7 @@ article {
               // max-height: 480px;
               min-height: 300px;
               // max-height: 450px;
-              padding: 1rem 0.2rem;
+              padding: 1rem 0;
             }
 
             .folded-tit {

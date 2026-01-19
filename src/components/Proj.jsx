@@ -13,7 +13,7 @@ export const Prj = () => {
 
   const Dataa = [
     {
-      title: "運用",
+      title: "works",
       desc: {
         tachi1: {
           skills: ["js", "scss"],
@@ -24,6 +24,7 @@ export const Prj = () => {
             "js 레거시 코드 개선과 이벤트 페이지의 js 코드 개선하여 작업자의 작업 효율성 증대",
             "타 신규 작업자의 원활한 온보딩을 위하여 프로젝트 내부 가이드 문서 작성",
           ],
+          url: "https://www.lge.co.kr/support",
         },
         tachi2: {
           skills: ["js", "scss", "react"],
@@ -35,7 +36,7 @@ export const Prj = () => {
             "교육에 사용하는 다양한 디바이스에 대응하기 위해 UI 화면 최적화를 진행하여 학습 대상 사용자에게 안정적인 UX를 제공함",
           ],
         },
-        tachi4: {
+        tachi3: {
           skills: ["js", "scss", "react"],
           tit: "[ウェブ・アプリケーション] UXUIのメンテナンス phonic",
           description: [
@@ -44,22 +45,17 @@ export const Prj = () => {
             "웹/앱 전체 uxui 담당",
           ],
         },
-        tachi5: {
+        tachi4: {
           skills: ["js", "scss"],
           tit: "[웹] 서울여자대학교 아동학과",
           description: ["", "유지보수 요청으로 페이지 스타일시트 수정"],
         },
-        tachi6: {
+        tachi5: {
           skills: ["js", "scss", "react"],
           tit: "[ウェブ] ジョップコリアサイト",
           description: [],
         },
-      },
-    },
-    {
-      title: "구축 프로젝트",
-      desc: {
-        tachi1: {
+        tachi11: {
           tit: "미래에셋 헬스케어 앱",
           skills: ["js", "scss"],
           description: [
@@ -68,7 +64,7 @@ export const Prj = () => {
             "2025 어워드 디자인 장려상 수상",
           ],
         },
-        tachi2: {
+        tachi22: {
           tit: "현대자동차 웹,모바일웹 사이트 ",
           skills: ["js", "scss"],
           description: [
@@ -77,7 +73,7 @@ export const Prj = () => {
             "영문 퍼블리싱 중 발견된 원고 품질 이슈에 대해 기획 및 PM 부서와 협업하여 수정 반영함으로써, 최종 콘텐츠의 정확성과 전달력 향상에 기여 動画のようなメディア要素に関するアニメーションイベント関数作成に携わりました。",
           ],
         },
-        tachi3: {
+        tachi33: {
           tit: "[웹 / 모바일] LG전자 global project 사이트 ",
           skills: ["pug", "scss"],
           description: [
@@ -86,7 +82,7 @@ export const Prj = () => {
             "",
           ],
         },
-        tachi4: {
+        tachi44: {
           skills: ["js", "scss", "react"],
           tit: "[웹 / 모바일] uxui 영어시험 구축 및 유지보수",
           description: [
@@ -95,7 +91,7 @@ export const Prj = () => {
             "다양한 유형의 시험(4지선다, 동일단어 줄긋기 등) 구현",
           ],
         },
-        tachi5: {
+        tachi55: {
           skills: ["js", "scss"],
           tit: "[ウェブ] ssmedipia",
           description: [
@@ -103,7 +99,7 @@ export const Prj = () => {
             "(troubleshooting) 一つのレポジトリーで普段10名のエンジニアがソースの管理に取り組んでいましたので、gitでコンフリクトの状況が頻繁にありましたが、その時にgitについてより詳しくなりましたのでいい経験できました",
           ],
         },
-        tachi6: {
+        tachi66: {
           skills: ["js", "scss"],
           tit: "[ウェブ] 공간산업",
           description: [
@@ -120,15 +116,6 @@ export const Prj = () => {
       desc: {
         tachi20: {
           tit: "MDN 영한번역 기여",
-          skills: [],
-          description0: [
-            "outerHeight",
-            "deviceApi",
-            "clipboard",
-            "tabindex",
-            "Ratelimit",
-            "Static site generator",
-          ],
           description: [
             {
               label: "outerHeight",
@@ -139,17 +126,26 @@ export const Prj = () => {
             { label: "tabindex", url: "https://www.box1.com" },
           ],
         },
-        tachi00: {
+        tachi21: {
           tit: "Regex learn 사이트 한국어 교정 기여",
-          skills: [],
           description: [
-            "Regex 표현식을 공부하던 도중 발견한 사이트에서 자연스럽지 않은 한국어 번역에 성질이 나서 한국어 사용자의 원활한 학습에 기여함",
+            {
+              label: "이동",
+              url: "https://regexlearn.com/ko",
+              subDesc: "ddasdf",
+            },
+            // "Regex 표현식을 공부하던 도중 발견한 사이트에서 자연스럽지 않은 한국어 번역에 성질이 나서 한국어 사용자의 원활한 학습에 기여함",
           ],
         },
-        tachi2: {
+        tachi222: {
           tit: "대시보드 샘플",
-          skills: ["ts", "react", "scss"],
-          description: ["", ".", "", "", "", ""],
+          description: [
+            {
+              label: "이동",
+              url: "https://regexlearn.com/ko",
+              subDesc: "ddadfdasdf",
+            },
+          ],
         },
       },
     },
@@ -408,7 +404,6 @@ export const Prj = () => {
           <div className="works-wrap">
             {Dataa.map((item, index) => {
               const isActive = tabs === index;
-
               return (
                 <div
                   key={index}
@@ -426,12 +421,6 @@ export const Prj = () => {
 
                   {isActive && (
                     <div className="cont">
-                      {/* <div className="summary">
-                        {item.desc.tachi1.skills.map((type, index) => (
-                          <Chip key={index} type={type} />
-                        ))}
-                      </div> */}
-
                       {Object.entries(item.desc).map(([key, value]) => (
                         <div key={key} className="summary">
                           <div className="chip-wrap">
@@ -441,7 +430,7 @@ export const Prj = () => {
 
                             {
                               // last one only
-                              tabs === 2 ? (
+                              tabs === 0 ? (
                                 <>
                                   {value.skills.map((type, index) => (
                                     <Chip key={index} type={type} />
@@ -453,45 +442,39 @@ export const Prj = () => {
 
                           {
                             // last one only
-                            tabs === 2 ? (
+                            tabs === 1 ? (
                               <>
-                                {value.description.map((descItem, index) => (
-                                  <a
-                                    key={index}
-                                    href={descItem.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    {descItem.label}
-                                  </a>
-                                ))}
+                                <div className="btn-wrap">
+                                  {value.description.map((descItem, index) => (
+                                    <span>
+                                      <p>{descItem.subDesc}</p>
+                                      <a
+                                        key={index}
+                                        href={descItem.url}
+                                        className="btn-link"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {descItem.label}
+                                      </a>
+                                    </span>
+                                  ))}{" "}
+                                </div>
                               </>
                             ) : (
                               <>
-                                {value.description.map((descItem, index) => (
-                                  <p key={index}>{descItem}</p>
-                                ))}
+                                <div className="works-desc">
+                                  {value.description.map((descItem, index) => (
+                                    <p key={index} className="txt">
+                                      {descItem}
+                                    </p>
+                                  ))}
+                                </div>
                               </>
                             )
                           }
                         </div>
                       ))}
-
-                      {/* {item.desc.map((d, i) => (
-                        <>
-                          <p
-                            key={i}
-                            className={`desc ${i === 1 ? "this" : ""}`}
-                          >
-                            {d}
-                          </p>
-                          {i === 2 ? (
-                            <>
-                              <span className="imgbox">{i}me</span>
-                            </>
-                          ) : null}
-                        </>
-                      ))} */}
                     </div>
                   )}
                 </div>
