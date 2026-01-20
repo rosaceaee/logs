@@ -425,16 +425,28 @@ export const Prj = () => {
                         <div key={key} className="summary">
                           <div className="chip-wrap">
                             {value.tit && (
-                              <h4 className="title">{value.tit}</h4>
+                              <span className="tit-wrap">
+                                <h4 className="title">{value.tit}</h4>
+                                <a
+                                  href={value.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  이동
+                                </a>
+                              </span>
                             )}
 
                             {
                               // last one only
                               tabs === 0 ? (
                                 <>
-                                  {value.skills.map((type, index) => (
-                                    <Chip key={index} type={type} />
-                                  ))}
+                                  {" "}
+                                  <div className="chip-box">
+                                    {value.skills.map((type, index) => (
+                                      <Chip key={index} type={type} />
+                                    ))}{" "}
+                                  </div>
                                 </>
                               ) : null
                             }
