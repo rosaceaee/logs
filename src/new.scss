@@ -9,6 +9,8 @@ $red: #e65952;
 $yel: rgb(217, 217, 28);
 $yb: #fdfff8;
 $blue: #1591e4;
+$palebl: #58c4dc;
+$brn: #a86454;
 //
 
 // font
@@ -53,9 +55,9 @@ nav {
   background: $gray;
   color: $fff;
   opacity: 0.5;
-
   container-type: inline-size;
   container-name: navv;
+
   ul {
     display: flex;
     margin-left: auto;
@@ -98,18 +100,24 @@ nav {
   &:nth-child(1) {
     margin: 0 0.3rem 0 0;
   }
+  &.css {
+    background: $blue;
+    color: #fff;
+  }
   &.scss {
     background: $blue;
     color: #fff;
   }
-
   &.js {
     background: $yel;
     color: #333;
   }
-
   &.react {
-    background: $red;
+    background: $palebl;
+    color: $fff;
+  }
+  &.pug {
+    background: $brn;
     color: $fff;
   }
 }
@@ -255,6 +263,9 @@ article {
                   gap: 10px;
                   padding: 10px 0;
                   margin: 1rem 0;
+                  .title {
+                    font-size: 1.2rem;
+                  }
                 }
 
                 .btn-wrap {
@@ -359,14 +370,14 @@ article {
             }
             .title {
               font-size: 2.5rem;
+              width: calc(100% - 3rem);
+              margin: 0 auto;
             }
             .date {
               display: flex;
               align-self: flex-end;
             }
           }
-        }
-        @container navv (max-width: 1024px) {
         }
       }
     }
