@@ -175,7 +175,7 @@ export const Prj = () => {
           // onClick={() => setMo((prev) => !prev)}
           // style={{ transform: window.innerWidth <= 500 ? `rotate(${scrollData.rotation}deg)` : "none" }}
         >
-          <div
+          {/* <div
             className="box"
             onClick={() => {
               if (window.innerWidth <= 500) {
@@ -183,9 +183,9 @@ export const Prj = () => {
               }
             }}
             draggable="true"
-          ></div>
+          ></div> */}
 
-          <ul className="pc-only">
+          <ul>
             <li>
               <p>velog</p>
             </li>
@@ -219,13 +219,12 @@ export const Prj = () => {
               능숙합니다.
             </p>
             <p className="para">
-              또한 테크니컬 라이팅에 관심이 많아 MDN 웹 문서의 번역 기여 활동을
-              하며, 다른 개발자들에게도 도움이 되기를 바람과 동시에 기술적인
-              지식을 다지고 있습니다.
+              또한 MDN 웹 문서의 번역 기여 활동을 하며, 다른 개발자들에게도
+              도움이 되기를 바람과 동시에 기술적인 지식을 다지고 있습니다.
             </p>
           </span>
 
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 800 800"
@@ -286,13 +285,13 @@ export const Prj = () => {
                 fill="url(#sssurface-grad-light)"
               ></circle>
             </g>
-          </svg>
+          </svg> */}
         </section>
 
         <section className="right">
-          <div className="right-header">
+          {/* <div className="right-header">
             <h2 className="idk">Works</h2>
-          </div>
+          </div> */}
           <div className="works-wrap">
             {Dataa.map((item, index) => {
               const isActive = tabs === index;
@@ -319,13 +318,6 @@ export const Prj = () => {
                             {value.tit && (
                               <span className="tit-wrap">
                                 <h4 className="title">{value.tit}</h4>
-                                <a
-                                  href={value.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  이동
-                                </a>
                               </span>
                             )}
 
@@ -338,6 +330,13 @@ export const Prj = () => {
                                     {value.skills.map((type, index) => (
                                       <Chip key={index} type={type} />
                                     ))}{" "}
+                                    <a
+                                      href={value.url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      이동zzz
+                                    </a>
                                   </div>
                                 </>
                               ) : null

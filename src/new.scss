@@ -54,7 +54,7 @@ nav {
   height: 56px;
   background: $gray;
   color: $fff;
-  opacity: 0.5;
+  opacity: 1;
   container-type: inline-size;
   container-name: navv;
 
@@ -93,10 +93,11 @@ nav {
   padding: 10px 0;
 
   .tit-wrap {
-    border: 1px solid red;
     display: flex;
     gap: 1rem;
     padding: 0 10px;
+    align-items: center;
+    margin-right: 1rem;
   }
 }
 .chip {
@@ -129,16 +130,20 @@ nav {
   }
 }
 
+.matome-content {
+  height: calc(100vh - 2rem);
+}
+
 article {
   background-color: #f8e5d2;
   width: 100%;
   display: grid;
   grid-template-columns: 40% 60%;
-  height: 100%;
+  height: calc(100vh - 7rem);
   // padding-top: 56px;
   padding-top: 28px;
   gap: 6px;
-  height: calc(100vh - 56px);
+  // height: calc(100vh - 56px);
   overflow: hidden;
 
   section {
@@ -156,6 +161,7 @@ article {
       overflow-y: hidden;
       border-top-right-radius: 13px;
       border-bottom-left-radius: 13px;
+      max-height: 53rem;
 
       .title-wrap {
         margin: 2rem;
@@ -167,7 +173,7 @@ article {
       }
       .para {
         background: #fff;
-        padding: 10px;
+        padding: 1.5rem;
         margin: 10px 0;
         width: auto;
       }
@@ -187,6 +193,7 @@ article {
       display: flex;
       flex-direction: column;
       gap: 6px;
+      height: 100vh;
 
       container-type: inline-size;
       container-name: worksBox;
@@ -219,7 +226,8 @@ article {
           cursor: pointer;
           overflow-y: auto;
           overflow-x: hidden;
-          max-height: 728px;
+          // max-height: 728px;
+          max-height: 47rem;
           padding: 1rem 0;
           background: $red;
           color: $fff;
@@ -398,14 +406,6 @@ article {
 
 @container navv (max-width: 1024px) {
   .nav-wrap {
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-left: auto;
-    display: block;
-    position: fixed;
-    right: 7px;
-    top: 0;
-
     &.rotate {
       transform: rotate(360deg);
       transition: transform 0.5s ease;
@@ -416,8 +416,7 @@ article {
     }
     ul {
       width: 100%;
-      height: 7rem;
-      margin-right: 10px;
+      margin-right: 2rem;
       margin-left: 0;
       max-width: 100%;
       left: 0;
@@ -451,7 +450,7 @@ article {
   }
 }
 
-@container card (max-width: 820px) {
+@container card (max-width: 1024px) {
   article {
     section {
       &.left {
@@ -460,6 +459,7 @@ article {
         margin: 0 auto;
         border-radius: 0;
         .title-wrap {
+          margin: 1rem;
           h1 {
             font-size: 1.6rem;
           }
@@ -493,12 +493,28 @@ article {
                 }
 
                 .summary {
+                  padding: 0 0.5rem 1rem;
+                  width: 100%;
                   .chip-wrap {
                     display: block;
                     width: 100%;
+                    .tit-wrap {
+                      gap: 0rem;
+                      padding: 0 0px;
+                      align-items: center;
+                      margin-right: 0px;
+                    }
                     .title {
                       margin-bottom: 10px;
+                      font-size: 1.1rem;
                     }
+                  }
+
+                  .btn-wrap {
+                    width: calc(100% - 0rem);
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
                   }
                 }
               }
@@ -542,7 +558,7 @@ article {
 }
 
 // https://www.fffuel.co/dddoodle/
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .box {
     width: 100px;
     height: 60px;
@@ -560,23 +576,12 @@ article {
   }
 
   .nav-wrap {
-    width: 7rem;
-    height: 7rem;
-    margin-left: auto;
-    display: block;
-    position: fixed;
-    right: 7px;
+    right: 0;
     top: 0;
-    z-index: 999;
-    background: none;
 
     &.rotate {
       transform: rotate(360deg);
       transition: transform 0.5s ease;
-    }
-
-    .pc-only {
-      display: none;
     }
   }
 
