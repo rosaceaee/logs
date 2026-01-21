@@ -21,13 +21,14 @@ export const Prj = () => {
           url: "https://www.lge.co.kr/support",
         },
         tachi11: {
-          tit: "미래에셋 헬스케어 앱 구축",
+          tit: "[앱] 미래에셋 헬스케어 앱 구축",
           skills: ["js", "scss"],
           description: [
             "헬스 앱 uxui 리뉴얼 구축 프로젝트의 퍼블리싱 담당",
             "유닛 테스트, 통합 테스트의 ui 관련 부분 디버깅 담당하여 앱 뷰 완성도 향상",
             "2025 어워드 디자인 장려상 수상",
           ],
+          url: "https://play.google.com/store/apps/details?id=com.mMiraeAssetLife",
         },
         tachi22: {
           tit: "[웹 / 모바일] 현대자동차 사이트 구축",
@@ -37,6 +38,7 @@ export const Prj = () => {
             "디자인 일관성과 재사용성 강화를 위한 UI 컴포넌트 구조 개선 및 문서화 참여 ",
             "영문 퍼블리싱 중 발견된 원고 품질 이슈에 대해 기획 및 PM 부서와 협업하여 수정 반영함으로써, 최종 콘텐츠의 정확성과 전달력 향상에 기여",
           ],
+          url: "https://www.hyundai-n.com/",
         },
         tachi33: {
           tit: "[웹 / 모바일] LG전자 global project 사이트 구축",
@@ -45,10 +47,11 @@ export const Prj = () => {
             "동유럽, 대만, 베트남 사이트의 결제, 회원 관련 페이지 구축",
             "타국가 사이트와 싱크 맞추어 안정화 작업",
           ],
+          url: "https://www.lg.com/hu/",
         },
         tachi44: {
           skills: ["js", "scss", "react"],
-          tit: "[웹 / 모바일] 영어 교육용 프로덕트 구축 및 유지보수 ",
+          tit: "[웹 / 모바일] 영어 교육 웹앱 구축 및 유지보수 ",
           description: [
             "(사내 보안이슈로 url 게시가 어렵습니다.)",
             "react, reactNative로 만들어진 서비스 UXUI 구축 및 유지보수를 담당",
@@ -63,6 +66,7 @@ export const Prj = () => {
           description: [
             "메인 페이지의 웹, 모바일 화면 안정화 작업을 담당하여 사이트의 안정성 개선",
           ],
+          url: "https://childstudy.swu.ac.kr/",
         },
         tachi5: {
           skills: ["js", "scss"],
@@ -73,14 +77,13 @@ export const Prj = () => {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] ssmedipia",
           description: ["사이트 내 전체 페이지 퍼블리싱을 담당"],
+          url: "http://www.ssmedipia.com/",
         },
         tachi66: {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] 공간산업 주식회사",
-          description: [
-            // "http://www.spcdoor.com/",
-            "사이트 내 전체 페이지 퍼블리싱을 담당",
-          ],
+          description: ["사이트 내 전체 페이지 퍼블리싱을 담당"],
+          url: "http://www.spcdoor.com/",
         },
       },
     },
@@ -105,6 +108,14 @@ export const Prj = () => {
             {
               label: "tabIndex",
               url: "https://developer.mozilla.org/ko/docs/Web/API/HTMLElement/tabIndex",
+            },
+            {
+              label: "rate limit",
+              url: "https://github.com/mdn/translated-content/pull/31823",
+            },
+            {
+              label: "SSG",
+              url: "https://github.com/mdn/translated-content/pull/31895",
             },
           ],
         },
@@ -175,16 +186,6 @@ export const Prj = () => {
           // onClick={() => setMo((prev) => !prev)}
           // style={{ transform: window.innerWidth <= 500 ? `rotate(${scrollData.rotation}deg)` : "none" }}
         >
-          {/* <div
-            className="box"
-            onClick={() => {
-              if (window.innerWidth <= 500) {
-                setMo((prev) => !prev);
-              }
-            }}
-            draggable="true"
-          ></div> */}
-
           <ul>
             <li>
               <p>velog</p>
@@ -204,7 +205,7 @@ export const Prj = () => {
       <article>
         <section className="left">
           <span className="title-wrap">
-            <h1>どうもー</h1>
+            <h1>안녕하세요!</h1>
             <h3></h3>
             <p className="para">
               화면을 그리며 구현하는 것을 넘어, 프로덕트의 본질적인 내부를
@@ -223,69 +224,6 @@ export const Prj = () => {
               도움이 되기를 바람과 동시에 기술적인 지식을 다지고 있습니다.
             </p>
           </span>
-
-          {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            viewBox="0 0 800 800"
-          >
-            <defs>
-              <radialGradient
-                id="sssurface-grad-dark"
-                r="75%"
-                cx="18%"
-                cy="20%"
-              >
-                <stop
-                  offset="0%"
-                  stop-color="hsl(50, 98%, 50%)"
-                  stop-opacity="0"
-                ></stop>
-                <stop
-                  offset="100%"
-                  stop-color="#c4a200"
-                  stop-opacity="0.64"
-                ></stop>
-              </radialGradient>
-              <radialGradient
-                id="sssurface-grad-light"
-                r="15%"
-                cx="23%"
-                cy="20%"
-              >
-                <stop
-                  offset="0%"
-                  stop-color="#ffff52"
-                  stop-opacity="0.19"
-                ></stop>
-                <stop
-                  offset="100%"
-                  stop-color="hsl(50, 98%, 50%)"
-                  stop-opacity="0"
-                ></stop>
-              </radialGradient>
-            </defs>
-            <g>
-              <circle
-                r="350"
-                cx="400"
-                cy="400"
-                fill="hsl(50, 98%, 50%)"
-              ></circle>
-              <circle
-                r="350"
-                cx="400"
-                cy="400"
-                fill="url(#sssurface-grad-dark)"
-              ></circle>
-              <circle
-                r="350"
-                cx="400"
-                cy="400"
-                fill="url(#sssurface-grad-light)"
-              ></circle>
-            </g>
-          </svg> */}
         </section>
 
         <section className="right">
@@ -321,26 +259,18 @@ export const Prj = () => {
                               </span>
                             )}
 
-                            {
-                              // last one only
-                              tabs === 0 ? (
-                                <>
-                                  {" "}
-                                  <div className="chip-box">
+                            {tabs === 0 ? (
+                              <>
+                                {" "}
+                                <div className="chip-box">
+                                  <div className="chips">
                                     {value.skills.map((type, index) => (
                                       <Chip key={index} type={type} />
                                     ))}{" "}
-                                    <a
-                                      href={value.url}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      이동zzz
-                                    </a>
                                   </div>
-                                </>
-                              ) : null
-                            }
+                                </div>
+                              </>
+                            ) : null}
                           </div>
 
                           {
@@ -349,8 +279,8 @@ export const Prj = () => {
                               <>
                                 <div className="btn-wrap">
                                   {value.description.map((descItem, index) => (
-                                    <span>
-                                      <p>{descItem.subDesc}</p>
+                                    <div className="subdesc-box">
+                                      {/* <p>{descItem.subDesc}</p> */}
                                       <a
                                         key={index}
                                         href={descItem.url}
@@ -360,7 +290,7 @@ export const Prj = () => {
                                       >
                                         {descItem.label}
                                       </a>
-                                    </span>
+                                    </div>
                                   ))}{" "}
                                 </div>
                               </>
@@ -373,6 +303,15 @@ export const Prj = () => {
                                     </p>
                                   ))}
                                 </div>
+
+                                <a
+                                  href={value.url}
+                                  className="btn-move"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  이동
+                                </a>
                               </>
                             )
                           }
