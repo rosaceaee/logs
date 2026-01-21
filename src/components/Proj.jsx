@@ -9,7 +9,7 @@ export const Prj = () => {
     {
       title: "works",
       desc: {
-        tachi1: {
+        works1: {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] LG전자 사이트 운영",
           description: [
@@ -20,7 +20,7 @@ export const Prj = () => {
           ],
           url: "https://www.lge.co.kr/support",
         },
-        tachi11: {
+        works2: {
           tit: "[앱] 미래에셋 헬스케어 앱 구축",
           skills: ["js", "scss"],
           description: [
@@ -30,7 +30,7 @@ export const Prj = () => {
           ],
           url: "https://play.google.com/store/apps/details?id=com.mMiraeAssetLife",
         },
-        tachi22: {
+        works3: {
           tit: "[웹 / 모바일] 현대자동차 사이트 구축",
           skills: ["js", "scss"],
           description: [
@@ -40,7 +40,7 @@ export const Prj = () => {
           ],
           url: "https://www.hyundai-n.com/",
         },
-        tachi33: {
+        works4: {
           tit: "[웹 / 모바일] LG전자 global project 사이트 구축",
           skills: ["pug", "scss"],
           description: [
@@ -49,7 +49,7 @@ export const Prj = () => {
           ],
           url: "https://www.lg.com/hu/",
         },
-        tachi44: {
+        works5: {
           skills: ["js", "scss", "react"],
           tit: "[웹 / 모바일] 영어 교육 웹앱 구축 및 유지보수 ",
           description: [
@@ -59,8 +59,9 @@ export const Prj = () => {
             "기존에 운영하던 웹앱 제품의 리팩토링: 기존에 사용된 CSS 레거시 코드 정리 및 구조 리팩토링을 수행하여 코드 가독성과 UXUI 안정성을 향상시킴",
             "교육에 사용하는 다양한 디바이스에 대응하기 위해 UI 화면 최적화를 진행하여 학습 대상 사용자에게 영어 학습 및 시험응시에 안정적인 UX를 제공함",
           ],
+          url: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
         },
-        tachi4: {
+        works6: {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] 서울여자대학교 아동학과",
           description: [
@@ -68,18 +69,19 @@ export const Prj = () => {
           ],
           url: "https://childstudy.swu.ac.kr/",
         },
-        tachi5: {
+        works7: {
           skills: ["js", "scss"],
           tit: "[웹] 잡코리아 사이트 내 컨텐츠 퍼블리싱",
           description: ["공고 컨텐츠 페이지의 웹, 모바일 화면 퍼블리싱 담당"],
+          url: "https://www.jobkorea.co.kr/",
         },
-        tachi55: {
+        works8: {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] ssmedipia",
           description: ["사이트 내 전체 페이지 퍼블리싱을 담당"],
           url: "http://www.ssmedipia.com/",
         },
-        tachi66: {
+        works9: {
           skills: ["js", "scss"],
           tit: "[웹 / 모바일] 공간산업 주식회사",
           description: ["사이트 내 전체 페이지 퍼블리싱을 담당"],
@@ -88,9 +90,9 @@ export const Prj = () => {
       },
     },
     {
-      title: "개인 작업",
+      title: "개인 활동",
       desc: {
-        tachi20: {
+        works10: {
           tit: "MDN 영한번역 기여",
           subtit: "흰색박스는 배포 전단계로 리뷰어 컨펌 대기중",
           description: [
@@ -120,7 +122,7 @@ export const Prj = () => {
             },
           ],
         },
-        tachi21: {
+        works11: {
           tit: "Regex learn 사이트 한국어 교정 기여",
           description: [
             {
@@ -128,16 +130,6 @@ export const Prj = () => {
               url: "https://regexlearn.com/ko",
               subDesc:
                 "Regex 표현식을 공부하던 도중 발견한 사이트에서 자연스럽지 않은 한국어 번역을 일부 교정하여 한국어 사용자의 원활한 학습에 기여함",
-            },
-          ],
-        },
-        tachi222: {
-          tit: "대시보드 샘플",
-          description: [
-            {
-              label: "이동",
-              url: "https://regexlearn.com/ko",
-              subDesc: "",
             },
           ],
         },
@@ -189,10 +181,22 @@ export const Prj = () => {
         >
           <ul>
             <li>
-              <p>velog</p>
+              <a
+                href="https://velog.io/@rosaceaee/posts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                velog
+              </a>
             </li>
             <li>
-              <p>github</p>
+              <a
+                href="https://github.com/rosaceaee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github
+              </a>
             </li>
           </ul>
         </nav>
@@ -206,8 +210,10 @@ export const Prj = () => {
       <article>
         <section className="left">
           <span className="title-wrap">
-            <h1>안녕하세요!</h1>
-            <h3></h3>
+            <h2 style={{ marginBottom: "1.5rem" }}>
+              안녕하세요! <br /> 퍼블리셔 장영주입니다.
+            </h2>
+
             <p className="para">
               화면을 그리며 구현하는 것을 넘어, 프로덕트의 본질적인 내부를
               분석하고 파악하여 품질을 높이는 데에 집중하고 있습니다.
