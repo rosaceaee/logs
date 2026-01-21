@@ -104,10 +104,8 @@ function App() {
                 className="title"
                 onClick={() => {
                   if (item.url) {
-                    // URL이 있으면 새창으로 열기
                     window.open(item.url, "_blank");
                   } else {
-                    // URL이 없으면 컴포넌트 선택
                     dispatch({
                       type: "selected_el",
                       payload: {
