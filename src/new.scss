@@ -318,6 +318,13 @@ article {
                   }
 
                   .subdesc-box {
+                    &.notyet {
+                      .btn-link {
+                        background: $fff;
+                        color: $black;
+                        border: 1px dashed $black;
+                      }
+                    }
                     p {
                       margin: -1rem 6px 1rem;
                       display: block;

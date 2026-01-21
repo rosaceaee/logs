@@ -92,6 +92,7 @@ export const Prj = () => {
       desc: {
         tachi20: {
           tit: "MDN 영한번역 기여",
+          subtit: "흰색박스는 배포 전단계로 리뷰어 컨펌 대기중",
           description: [
             {
               label: "outerHeight",
@@ -256,6 +257,7 @@ export const Prj = () => {
                             {value.tit && (
                               <span className="tit-wrap">
                                 <h4 className="title">{value.tit}</h4>
+                                <p>{value.subtit}</p>
                               </span>
                             )}
 
@@ -279,8 +281,14 @@ export const Prj = () => {
                               <>
                                 <div className="btn-wrap">
                                   {value.description.map((descItem, index) => (
-                                    <div className="subdesc-box">
-                                      {/* <p>{descItem.subDesc}</p> */}
+                                    <div
+                                      className={`subdesc-box ${
+                                        index === 4 || index === 5
+                                          ? "notyet"
+                                          : ""
+                                      }`}
+                                    >
+                                      <p>{descItem.subDesc}</p>
                                       <a
                                         key={index}
                                         href={descItem.url}
