@@ -81,6 +81,9 @@ nav {
         &:link {
           color: $fff;
         }
+        &:visited {
+          color: $fff;
+        }
       }
     }
   }
@@ -301,6 +304,9 @@ article {
                   padding: 5px 1rem;
                   margin: 1.5rem auto;
                   &:link {
+                    color: $fff;
+                  }
+                  &:visited {
                     color: $fff;
                   }
                 }
